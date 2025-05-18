@@ -99,11 +99,6 @@ main {
     font-weight: normal;
     font-stretch: extra-condensed;
   }
-
-  .band-name {
-    font-size: 96px;
-    line-height: 1.1;
-  }
 }
 
 .concert-hero {
@@ -139,7 +134,6 @@ main {
   .overlay-content {
     padding: 1rem !important;
   }
-
 }
 
 .band-name-container {
@@ -156,10 +150,55 @@ main {
   color: #fea659;
 }
 
+@media (max-width: 575px) {
+  .band-name {
+    font-size: 32px;
+  }
+
+  .event-card {
+    width: 140px !important;
+    margin: auto !important;
+  }
+
+  .event-date,
+  .event-time {
+    font-size: small !important;
+  }
+
+  .buy-btn-img {
+    font-size: small !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .band-name {
+    font-size: 48px;
+  }
+
+  .event-card {
+    width: auto;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .band-name {
+    font-size: 76px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .band-name {
+    font-size: 96px;
+  }
+}
+
+
+
 .event-card {
   background-color: #fea659;
   padding: 2rem;
-  margin: auto;
+  margin: 1rem auto;
   width: 190px;
 }
 
@@ -188,46 +227,24 @@ main {
 
 @media (max-width: 575px) {
   /*  */
-  .band-name {
-    font-size: 32px !important;
-  }
-
-  .event-card {
-  background-color: #fea659;
-  padding: 2rem;
-  margin: auto;
-  width: auto;
-  max-width: 190px;
-  }
-
-  .event-date,
-  .event-time {
-    font-size: small !important;
-  }
-
-  .buy-btn-img {
-    font-size: small !important;
-  }
-
-  /*  */
   .topic-container {
     height: min-content !important;
   }
 
   .topic-name {
     height: 70px !important;
-    width: 340px;
+    width: 320px !important;
   }
 
   .first-word,
   .second-word {
     font-size: 1.3rem !important;
-    width: 180px !important;
+    width: 170px !important;
   }
 
   .second-word {
     top: 15px !important;
-    left: 160px !important;
+    left: 150px !important;
   }
 
   .first-word {
@@ -236,10 +253,6 @@ main {
 }
 
 @media (min-width: 576px) {
-  .band-name {
-    font-size: 48px !important;
-  }
-
   .topic-name {
     width: 380px !important;
   }
