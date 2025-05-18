@@ -18,8 +18,14 @@ main {
   width: 992px;
 }
 
+@media (max-width: 576px) {
+  .w-992 {
+    max-width: 515px;
+  }
+}
+
 .w-540 {
-  width: 540px;
+  width: 515px;
 }
 
 .custom-navbar {
@@ -129,6 +135,13 @@ main {
   padding: 2rem 3rem;
 }
 
+@media (max-width:575px) {
+  .overlay-content {
+    padding: 1rem !important;
+  }
+
+}
+
 .band-name-container {
   align-self: flex-start;
 }
@@ -172,7 +185,102 @@ main {
   margin-top: 8px;
 }
 
+
+@media (max-width: 575px) {
+  /*  */
+  .band-name {
+    font-size: 32px !important;
+  }
+
+  .event-card {
+  background-color: #fea659;
+  padding: 2rem;
+  margin: auto;
+  width: auto;
+  max-width: 190px;
+  }
+
+  .event-date,
+  .event-time {
+    font-size: small !important;
+  }
+
+  .buy-btn-img {
+    font-size: small !important;
+  }
+
+  /*  */
+  .topic-container {
+    height: min-content !important;
+  }
+
+  .topic-name {
+    height: 70px !important;
+    width: 340px;
+  }
+
+  .first-word,
+  .second-word {
+    font-size: 1.3rem !important;
+    width: 180px !important;
+  }
+
+  .second-word {
+    top: 15px !important;
+    left: 160px !important;
+  }
+
+  .first-word {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .band-name {
+    font-size: 48px !important;
+  }
+
+  .topic-name {
+    width: 380px !important;
+  }
+
+  .first-word,
+  .second-word {
+    font-size: 1.5rem !important;
+    width: 200px !important;
+  }
+
+  .second-word {
+    top: 15px !important;
+    left: 180px !important;
+  }
+
+  .first-word {
+    padding-right: 10px;
+  }
+}
+
 /* Upcoming events */
+@media (min-width: 992px) {
+  .topic-name {
+    width: 490px !important;
+  }
+
+  .first-word,
+  .second-word {
+    font-size: 2rem !important;
+    width: 260px !important;
+  }
+
+  .second-word {
+    top: 20px !important;
+    left: 230px !important;
+  }
+
+  .first-word {
+    padding-right: 10px;
+  }
+}
 
 .topic-container {
   position: relative;
@@ -209,10 +317,18 @@ main {
   background-color: #fea659;
 }
 
+
 .divider-line {
   background-color: #fea659;
   height: 2px;
   margin: 2rem 15px;
+  max-width: 992px;
+}
+
+@media (min-width: 992px) {
+  .divider-line {
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -289,6 +405,13 @@ main {
   position: relative;
 }
 
+@media (max-width: 575px){
+  .subscribe-text {
+    font-size: 32px !important;
+    top: -60px !important;
+  }
+}
+
 .subscribe-text {
   position: absolute;
   top: -70px;
@@ -327,6 +450,15 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  .subscribe-bottom-row {
+    display: table-column !important;
+  }
+  .subscribe-btn {
+    margin-top: 1rem;
+  }
 }
 
 .checkbox-container {
