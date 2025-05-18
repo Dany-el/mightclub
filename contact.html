@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,6 +33,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          title="Navigation button"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -106,13 +107,17 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="Map with location"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container px-3 my-5" style="max-width: 992px; margin-bottom: 100px !important">
+      <div
+        class="container px-3 my-5"
+        style="max-width: 992px; margin-bottom: 100px !important"
+      >
         <div class="row">
           <div class="col-md-6 mb-3 mb-md-0">
             <div
@@ -134,13 +139,16 @@
           <div class="col-md-6">
             <form class="main-font">
               <div class="mb-3">
-                <label class="form-label text-white mb-1" for="formMessage"
+                <label
+                  class="form-label text-white mb-1"
+                  for="formMessage"
                   >Name</label
                 >
                 <input
                   id="formName"
                   type="text"
                   class="form-control custom-input"
+                  title="Name input"
                   required
                 />
               </div>
@@ -152,6 +160,7 @@
                   id="formEmail"
                   type="email"
                   class="form-control custom-input"
+                  title="Email input"
                   required
                 />
               </div>
@@ -163,6 +172,7 @@
                   id="formMessage"
                   rows="4"
                   class="form-control custom-input"
+                  title="Message input"
                   required
                 ></textarea>
               </div>
@@ -170,6 +180,7 @@
                 <button
                   type="submit"
                   class="btn send-btn main-font-uppercase"
+                  title="Submit button"
                   onclick="validateForm()"
                 >
                   Send
@@ -177,7 +188,7 @@
                 <span
                   id="formSuccess"
                   class="text-success main-font ml-3"
-                  style="display: none; font-weight: 700;"
+                  style="display: none; font-weight: 700"
                   >Message sent!</span
                 >
               </div>
